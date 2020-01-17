@@ -1,0 +1,42 @@
+server:
+  port: 9200
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/plain,text/css,application/x-javascript,application/javascript
+
+spring:
+  application:
+    name: app-api-main
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/u7007_cms?characterEncoding=UTF-8&useSSL=false&autoReconnect=true&amp;failOverReadOnly=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  freemarker:
+    enabled: true
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .html
+    template-loader-path:
+      - classpath:/static
+    settings:
+      number_format: 0.##
+    
+swagger:
+  base-package: com.u7007.cms.controller
+  title: Cms-接口
+  description: Cms-接口
+  version: 1.0
+  terms-of-service-url: http://www.u7007.com
+  contact:
+    name: yxs
+    email: yangxshn@126.com
+    
+logging:
+  level:
+    com.u7007.cms.mapper: DEBUG
