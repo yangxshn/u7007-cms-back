@@ -1,5 +1,5 @@
 server:
-  port: 9200
+  port: 8080
   compression:
     enabled: true
     mime-types: application/json,application/xml,text/html,text/plain,text/css,application/x-javascript,application/javascript
@@ -8,10 +8,10 @@ spring:
   application:
     name: app-api-main
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/u7007_cms?characterEncoding=UTF-8&useSSL=false&autoReconnect=true&amp;failOverReadOnly=false&allowMultiQueries=true
+    url: jdbc:mysql://192.168.40.131:3306/u7007_cms?characterEncoding=UTF-8&useSSL=false&autoReconnect=true&amp;failOverReadOnly=false&allowMultiQueries=true
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: root
+    password: yangxshn
   freemarker:
     enabled: true
     cache: false
@@ -30,7 +30,7 @@ spring:
 swagger:
   base-package: com.u7007.cms.controller
   title: Cms-接口
-  description: Cms-接口
+  description: Cms-接口123
   version: 1.0
   terms-of-service-url: http://www.u7007.com
   contact:
